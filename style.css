@@ -1,0 +1,71 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+}
+.container-holder {
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.video-container {
+  position: fixed;
+}
+.container {
+  position: fixed;
+  z-index: 12;
+  background-color: white;
+  width: 400px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 100px white;
+  padding-bottom: 50px;
+}
+.search-bar {
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+}
+.search-input-icon {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.search {
+  padding: 5px 7px;
+  width: 200px;
+  border: 0;
+  border-bottom: 1px solid black;
+}
+.search:focus {
+  outline: none;
+}
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: 0;
+}
+.show-case {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+.temp, .humid, .wind {
+  font-size: larger;
+  text-align: center;
+}
+.error {
+  display: none;
+  text-align: left;
+  color: black;
+  padding-left: 60px;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    width: 300px;
+  }
+}

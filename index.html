@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/18718c7391.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.12/css/weather-icons.min.css"
+    integrity="sha512-r/Gan7PMSRovDus++vDS2Ayutc/cSdl268u047n4z+k7GYuR7Hiw71FsT3QQxdKJBVHYttOJ6IGLnlM9IoMToQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Weather App</title>
+</head>
+
+<body>
+  <main>
+    <section>
+      <div class="container-holder">
+        <div class="video-container">
+          <video src="./videos/clouds.mp4" autoplay loop muted></video>
+        </div>
+        <div class="container">
+          <div class="search-bar">
+            <div class="search-input-icon">
+              <input type="text" class="search cityName" placeholder="Enter your city.." spellcheck="false">
+              <div class="search-icon-button">
+                <button type="button">
+                  <i class="fa-solid fa-magnifying-glass fa-2xl" style="color: #000000;"></i>
+                </button>
+              </div>
+            </div>
+            <div class="error">
+              <p>Invalid city name.</p>
+            </div>
+          </div>
+          <div class="show-case">
+            <div class="cityNameFinal">
+              <h3 class="city"></h3>
+            </div>
+            <div class="temp">
+              <i class="wi wi-thermometer"></i>
+              <span class="temperature"></span>
+            </div>
+            <div class="humidityFinal">
+              <h3>HUMIDITY</h3>
+              <div class="humid">
+                <i class="wi wi-humidity"></i>
+                <span class="humidity"></span>
+              </div>
+            </div>
+            <div class="windFinal">
+              <h3>WIND SPEED</h3>
+              <div class="wind">
+                <i class="wi wi-strong-wind"></i>
+                <span class="windspeed"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="./index.js"></script>
+</body>
+
+</html>
